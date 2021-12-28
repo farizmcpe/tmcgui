@@ -1,0 +1,125 @@
+{
+  "name": "category_combat",
+  "help_id": "combat",
+  "android_icon": "ic_sword_cross_black_24dp",
+  "shortcut_color": "shortcut_red",
+
+  "items": [
+   {
+    "type": "toggle",
+      "path": "killbled",
+      "label": "Infinity-Aura",
+      "icon": "finite",
+      "items": [
+        {
+          "type": "slider",
+          "path": "pick_custom_distance/distance",
+          "label": "AttackDistance",
+          "range_float": [8, 4096]
+        },
+        {
+         "type": "toggle",
+         "path": "server/far_bypass/enabled",
+         "label": "isHive",
+         "has_shortcut": false
+        },
+        {
+          "type": "slider",
+          "path": "hitbox_expand/player_value",
+          "label": "Range",
+          "range_float": [1, 100]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "killaura/enabled",
+      "label": "s_combat_killaura",
+      "icon": "ic_sword_cross_black_24dp",
+      "items": [
+        {
+          "type": "toggle",
+          "path": "killaura/attack_mobs",
+          "label": "s_combat_killaura_attack_mobs"
+        },
+        {
+          "type": "toggle",
+          "path": "killaura/attack_players",
+          "label": "s_combat_killaura_attack_player"
+        },
+        {
+          "type": "slider",
+          "path": "killaura/frequency",
+          "label": "s_combat_killaura_interval",
+          "values": [1, 2, 5, 6, 7, 8, 9, 10, 15, 20, 30, 40, 50 ]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "movement/anti_knockback/enabled",
+      "label": "s_combat_anti_knockback",
+      "icon": "ic_file_download_black_24dp"
+    },
+    {
+      "type": "toggle",
+      "path": "auto_bow/enabled",
+      "label": "s_combat_auto_bow",
+      "icon": "ic_bullseye_arrow_black_24dp"
+    },
+    {
+      "type": "action",
+      "path": "tp_player",
+      "label": "s_combat_tp_to_player",
+      "icon": "ic_expand_black_24dp",
+      "has_shortcut": true
+    },
+    {
+      "type": "toggle",
+      "path": "hitbox_expand/enabled",
+      "label": "s_combat_hitbox_expand",
+      "icon": "ic_circle_double_black_24dp",
+      "has_shortcut": true,
+      "items": [
+        {
+          "type": "slider",
+          "path": "hitbox_expand/mob_value",
+          "label": "s_combat_hitbox_expand_mob",
+          "values": [1, 2, 3, 4, 5, 6, 7, 8 ]
+        },
+        {
+          "type": "slider",
+          "path": "hitbox_expand/player_value",
+          "label": "s_combat_hitbox_expand_player",
+          "values": [1, 2, 3, 4, 5, 6, 7, 8 ]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "switcher/enabled",
+      "label": "s_combat_switcher",
+      "icon": "ic_swap_horizontal_variant_black_24dp",
+      "items": [
+        {
+          "type": "slider",
+          "path": "switcher/slot_count",
+          "label": "s_combat_switcher_slot_count",
+          "values": [2, 3, 4, 5, 6, 7, 8, 9]
+        }
+      ]
+    },
+    {
+      "type": "toggle",
+      "path": "auto_armor/enabled",
+      "label": "s_combat_auto_armor",
+      "icon": "right"
+    },
+    {
+      "type": "toggle",
+      "path": "internal/premium_unlocked",
+      "label": "Unlock NBT",
+      "icon": "td_smile"
+    }
+  ]
+}
